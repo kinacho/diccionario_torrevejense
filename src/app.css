@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-torrevieja-salt text-slate-900 font-sans;
+  }
+}
+
+.article-content big {
+  @apply text-3xl font-bold font-serif block mb-2 text-torrevieja-blue-800;
+}
+
+.article-content span[style*="font-weight: bold"] {
+  @apply font-bold;
+}
+
+.article-content span[style*="font-style: italic"] {
+  @apply italic;
+}
+
+.article-content {
+  @apply prose prose-slate max-w-none prose-headings:font-serif;
+}
+
+/* Custom styles for dictionary elements */
+.etim-block {
+  @apply mt-6 p-4 bg-slate-100 rounded-lg border-l-4 border-torrevieja-blue-400;
+}
+
+.loc-block {
+  @apply mt-6 p-4 bg-torrevieja-blue-50 rounded-lg border border-torrevieja-blue-100;
+}
+
+.chip {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-torrevieja-blue-100 text-torrevieja-blue-800 mr-2 mb-2 hover:bg-torrevieja-blue-200 cursor-pointer transition-colors;
+}
